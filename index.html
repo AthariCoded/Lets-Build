@@ -9,7 +9,7 @@
     <!-- this meta tag is so important to make the page responsive with small screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- this is the page title -->
-    <title>Your name</title>
+    <title>Athary</title>
 
     <!-- link css file -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -20,20 +20,23 @@
   <!-- information that will show in the body (page) -->
   <body>
     <!-- header content -->
-    <header>Welcome to my website!!!</header>
-
+    <header id="top">Welcome to my website!!!</header>
+    <!-- header section nav main article all are div -->
     <!-- navBar -->
-    <nav id="nav">
+    <nav>
       <!-- img tag required at least to know the src and alt -->
-      <img src="./images/logo.png" alt="Logo" />
+      <img src="./images/logo2.png" alt="Logo" />
 
       <!-- ul tag = unordered tag.. li = list item.. a = anchor (used with links) -->
+      <!-- # id - . class -->
       <ul>
-        <li><a href="#nav">Home</a></li>
+        <li><a href="#top">Home</a></li>
         <li><a href="#work">My Work</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="https://youtube.com/c/hassanalshammari">My Youtube</a>
+          <a href="https://youtube.com/c/hassanalshammari" target="_blank"
+            >My Youtube</a
+          >
         </li>
       </ul>
     </nav>
@@ -41,12 +44,12 @@
     <!-- main section -->
     <main>
       <!-- top section -->
-      <section>
+      <section id="first">
         <!-- overlay -->
         <!-- div is used to create a group/section (we may use section tag as well) -->
-        <div>
+        <div class="overly">
           <!-- h3 to be used as a header -->
-          <!-- span can be used to help us access specific tags. -->
+          <!-- span can be used to help us access specific contect. -->
           <h3>Hello, <span>Hi</span>, World</h3>
 
           <!-- let's type a paragraph -->
@@ -64,20 +67,22 @@
 
       <!-- mywork section -->
       <section id="work">
-        <h2>My Work</h2>
-        <p>Talk generaly about the work</p>
+        <h2 class="center">My Work</h2>
+        <p class="center">Talk generaly about the work</p>
         <!-- article tag can be used inside of sections too.. div or section can replace this. -->
-        <article>
-          <h4>title</h4>
-          <p>date</p>
-          <p>talk about your work</p>
-        </article>
+        <div class="container">
+          <article class="card">
+            <h4>title</h4>
+            <p>date</p>
+            <p>talk about your work</p>
+          </article>
 
-        <article>
-          <h4>title</h4>
-          <p>date</p>
-          <p>talk about your work</p>
-        </article>
+          <article class="card">
+            <h4>title</h4>
+            <p>date</p>
+            <p>talk about your work</p>
+          </article>
+        </div>
       </section>
 
       <!-- contact section -->
@@ -134,7 +139,7 @@
     </main>
 
     <!-- footer tag -->
-    <footer>Copyright, made with ❤️ By <span>yourname</span>.</footer>
+    <footer>Copyright, made with ❤️ By <span>Athary</span>.</footer>
 
     <script>
       function sendHi() {

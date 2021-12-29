@@ -1,152 +1,16 @@
-<!-- tell the browser that this file is html-5 file -->
 <!DOCTYPE html>
-<html>
-  <!-- head is used to put information that will not show in the page (body) -->
+<html lang="en">
   <head>
-    <!-- meta tags that is used to make the page work properly -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- this meta tag is so important to make the page responsive with small screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- this is the page title -->
-    <title>Athary</title>
-
-    <!-- link css file -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- page icon -->
-    <link rel="icon" href="./images/sleeping.ico" />
+    <title>Document</title>
   </head>
-  <!-- information that will show in the body (page) -->
   <body>
-    <!-- header content -->
-    <header id="top">Welcome to my website!!!</header>
-    <!-- header section nav main article all are div -->
-    <!-- navBar -->
-    <nav>
-      <!-- img tag required at least to know the src and alt -->
-      <img src="./images/logo2.png" alt="Logo" />
-
-      <!-- ul tag = unordered tag.. li = list item.. a = anchor (used with links) -->
-      <!-- # id - . class -->
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="https://youtube.com/c/hassanalshammari" target="_blank"
-            >My Youtube</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <!-- main section -->
-    <main>
-      <!-- top section -->
-      <section id="first">
-        <!-- overlay -->
-        <!-- div is used to create a group/section (we may use section tag as well) -->
-        <div class="overly">
-          <!-- h3 to be used as a header -->
-          <!-- span can be used to help us access specific contect. -->
-          <h3>Hello, <span>Hi</span>, World</h3>
-
-          <!-- let's type a paragraph -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
-            nihil? Nostrum repudiandae modi ab voluptatem quisquam aspernatur
-            impedit alias architecto doloremque dicta, suscipit tempora
-            consectetur veritatis recusandae corrupti nesciunt nemo.
-          </p>
-
-          <!-- this is a button -->
-          <button onclick="sendHi()">Hello!</button>
-        </div>
-      </section>
-
-      <!-- mywork section -->
-      <section id="work">
-        <h2 class="center">My Work</h2>
-        <p class="center">Talk generaly about the work</p>
-        <!-- article tag can be used inside of sections too.. div or section can replace this. -->
-        <div class="container">
-          <article class="card">
-            <h4>title</h4>
-            <p>date</p>
-            <p>talk about your work</p>
-          </article>
-
-          <article class="card">
-            <h4>title</h4>
-            <p>date</p>
-            <p>talk about your work</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- contact section -->
-      <section>
-        <h2>My Form</h2>
-        <p>Help us, share, build!!</p>
-
-        <!-- we have to put the form tag when we want to deal with its children (textarea, input) -->
-        <form>
-          <div class="input-group">
-            <!-- label is used to connect a text with the input -->
-            <label for="formName">Your Name:</label>
-            <input
-              type="text"
-              name="formName"
-              id="formName"
-              placeholder="Enter your name"
-            />
-          </div>
-
-          <div class="input-group">
-            <label for="formEmail">Enter Email:</label>
-            <input
-              type="email"
-              name="formEmail"
-              id="formEmail"
-              placeholder="Enter your email"
-            />
-          </div>
-
-          <div class="input-group">
-            <label for="formMSG">Enter the message:</label>
-            <!-- textarea accepet for chars than text type of input -->
-            <textarea
-              name="formMSG"
-              id="formMSG"
-              placeholder="Your msg here:"
-            ></textarea>
-          </div>
-
-          <div class="input-group">
-            <label>Enter the type:</label>
-            <input type="radio" name="formType" value="one" id="formTypeOne" />
-            <label for="formTypeOne">Complaint</label>
-            <input type="radio" name="formType" value="two" id="formTypeTwo" />
-            <label for="formTypeTwo">Suggestion</label>
-          </div>
-
-          <div class="input-group">
-            <button onclick="sendHello()">Submit</button>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <!-- footer tag -->
-    <footer>Copyright, made with ❤️ By <span>Athary</span>.</footer>
-
-    <script>
-      function sendHi() {
-        alert("Hi");
-      }
-    </script>
-
+    <button onclick="funcKD('KD1')">KD1</button>
+    <button onclick="funcKD('KD2')">KD2</button>
+    <p id="KD1"></p>
+    <p id="KD2"></p>
     <script src="./js/myScript.js"></script>
   </body>
 </html>

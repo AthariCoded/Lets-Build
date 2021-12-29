@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin-top: 0px;
 }
@@ -13,6 +16,9 @@ a:hover {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
 h2 {
   text-shadow: 0 0 5px red;
   margin-top: 0;
@@ -72,4 +78,36 @@ nav ul li {
   width: 25%;
   padding: 8px;
   border: 1px solid red;
+}
+
+#card {
+  padding: 32px;
+}
+.myForm {
+  background-color: #fafafa;
+  width: 50%;
+  margin: auto;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px green;
+}
+
+.myForm .myInput,
+.myForm .myTextArea {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 25px;
+  border: 1px solid darkgrey;
+  padding: 8px;
+  margin-top: 10px;
+}
+.myForm .input-group {
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: black;
+  padding: 8px;
+  color: white;
 }
